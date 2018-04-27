@@ -1,0 +1,26 @@
+put http://localhost:9200/empresas
+{
+	"mappings": {
+		"empresas": {
+			"dynamic": "strict",
+			"properties": {
+				"cif": {
+					"type": "keyword"
+				},
+				"nombre": {
+					"type": "keyword"
+				},
+				"email": {
+					"type": "keyword"
+				},
+				"logo":{
+					"type": "binary"
+				},
+				"fecha_registro":{
+					"type": "date",
+					"format": "epoch_second"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+put http://localhost:9200/calendarios
+
+{
+    "mappings": {
+        "calendarios":{
+            "properties":{
+                "total_dìsponible":{
+                    "type": "integer"
+                }, 
+                "lunes":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "martes":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "miercoles":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "jueves":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "viernes":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "sabado":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "domingo":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "oferta":{
+                    "type" : "text"
+                }
+            }
+        }
+    }
+}

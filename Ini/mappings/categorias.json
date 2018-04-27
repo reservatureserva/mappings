@@ -1,0 +1,13 @@
+put http://localhost:9200/categorias
+{
+	"mappings": {
+		"categorias":{
+			"dynamic": "strict",
+			"properties":{
+				"categoria":{
+					"type" : "text"
+				}
+			}
+		}
+	}
+}

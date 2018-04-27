@@ -1,0 +1,291 @@
+{
+    "settings": {
+        "analysis": {
+            "filter": {
+                "spanish_stop": {
+                    "type":       "stop",
+                    "stopwords":  "_spanish_" 
+                },
+                "spanish_omitted":{
+                    "type": "stop",
+                    "stopwords_path": "stopwords/words.txt"
+                },
+                "spanish_keywords": {
+                    "type":       "keyword_marker",
+                    "keywords":   ["ejemplo"] 
+                },
+                "spanish_stemmer": {
+                    "type":       "stemmer",
+                    "language":   "light_spanish"
+                }
+            },
+            "analyzer": {
+                "spanish": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "char_filter": [
+                        "html_strip"
+                    ],
+                    "filter": [
+                        "spanish_omitted", "lowercase", "spanish_stop", "spanish_keywords", "spanish_stemmer"
+                    ]
+                }
+            }
+        }
+    },
+    "mappings": {
+        "usuarios": {
+            "dynamic": "strict",
+            "properties": {
+                "dni": {
+                    "type": "keyword"
+                },
+                "nombreCompleto": {
+                    "type": "keyword"
+                },
+                "email": {
+                    "type": "keyword"
+                },
+                "telefono":{
+                    "type": "keyword"
+                },
+                "fecha_nacimiento":{
+                    "type": "date",
+                    "format": "epoch_second"
+                },
+                "fecha_registro":{
+                    "type": "date",
+                    "format": "epoch_second"
+                }
+            }
+        },
+        "empresas": {
+            "dynamic": "strict",
+            "properties": {
+                "cif": {
+                    "type": "keyword"
+                },
+                "nombre": {
+                    "type": "keyword"
+                },
+                "email": {
+                    "type": "keyword"
+                },
+                "logo":{
+                    "type": "binary"
+                },
+                "fecha_registro":{
+                    "type": "date",
+                    "format": "epoch_second"
+                }
+            }
+        },
+        "ofertas": {
+            "dynamic": "strict",
+            "properties": {
+                "titulo": {
+                    "type": "text",
+                    "term_vector": "yes",
+                    "store": true,
+                    "analyzer": "spanish",
+                    "search_analyzer": "spanish"
+                },
+                "descripcion": {
+                    "type": "text",
+                    "term_vector": "yes",
+                    "store": true,
+                    "analyzer": "spanish",
+                    "search_analyzer": "spanish"
+                },
+                "agencia": {
+                    "properties":{
+                        "nombre":{
+                            "type": "text"
+                        },
+                        "cif":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "precio_base":{
+                    "type": "double"
+                },
+                "ubicacion":{
+                    "properties":{
+                        "direccion":{
+                            "type": "text"
+                        },
+                        "coord":{
+                            "type": "geo_point"
+                        }
+                    }
+                },
+                "requisitos":{
+                    "type": "text"
+                },
+                "cancelado":{
+                    "type": "boolean"
+                },
+                "categoria":{
+                    "type" : "text"
+                }
+            }
+        },
+        "categorias":{
+            "dynamic": "strict",
+            "properties":{
+                "categoria":{
+                    "type" : "text"
+                }
+            }
+        },
+        "calendarios":{
+            "properties":{
+                "total_dìsponible":{
+                    "type": "integer"
+                }, 
+                "lunes":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "martes":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "miercoles":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "jueves":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "viernes":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "sabado":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "domingo":{
+                    "properties":{
+                        "hora_inicio":{
+                            "type": "text"
+                        },
+                        "hora_fin":{
+                            "type": "text"
+                        },
+                        "hora_inicio1":{
+                            "type": "text"
+                        },
+                        "hora_fin2":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "oferta":{
+                    "type" : "text"
+                }
+            }
+        },
+        "reservas":{
+            "dynamic": "strict",
+            "properties":{
+                "hora_inicio":{
+                    "type": "text"
+                },
+                "hora_fin":{
+                    "type": "text"
+                },
+                "fecha_cancelacion":{
+                    "type": "text"
+                },
+                "oferta":{
+                    "type": "text"
+                },
+                "empresa":{
+                    "type": "text"
+                },
+                "cliente":{
+                    "type": "text"
+                },
+                "costo":{
+                    "type": "double"
+                }
+            }
+        }
+    }
+}

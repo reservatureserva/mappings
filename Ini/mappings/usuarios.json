@@ -1,0 +1,30 @@
+put http://localhost:9200/ofertas
+{
+    "mappings": {
+       "usuarios": {
+            "dynamic": "strict",
+            "properties": {
+                "dni": {
+                    "type": "keyword"
+                },
+                "nombreCompleto": {
+                    "type": "keyword"
+                },
+                "email": {
+                    "type": "keyword"
+                },
+                "telefono":{
+                    "type": "keyword"
+                },
+                "fecha_nacimiento":{
+                    "type": "date",
+                    "format": "epoch_second"
+                },
+                "fecha_registro":{
+                    "type": "date",
+                    "format": "epoch_second"
+                }
+            }
+        }
+    }
+}

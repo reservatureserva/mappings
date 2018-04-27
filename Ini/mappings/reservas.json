@@ -1,0 +1,31 @@
+put http://localhost:9200/reservas
+{
+    "mappings": {
+     "reservas":{
+        "dynamic": "strict",
+        "properties":{
+            "hora_inicio":{
+                "type": "text"
+            },
+            "hora_fin":{
+                "type": "text"
+            },
+            "fecha_cancelacion":{
+                "type": "text"
+            },
+            "oferta":{
+                "type": "text"
+            },
+            "empresa":{
+                "type": "text"
+            },
+            "cliente":{
+                "type": "text"
+            },
+            "costo":{
+                "type": "double"
+            }
+        }
+    }
+}
+}

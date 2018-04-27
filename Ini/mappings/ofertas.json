@@ -1,0 +1,89 @@
+{
+    "settings": {
+        "analysis": {
+            "filter": {
+                "spanish_stop": {
+                    "type":       "stop",
+                    "stopwords":  "_spanish_" 
+                },
+                "spanish_omitted":{
+                    "type": "stop",
+                    "stopwords_path": "stopwords/words.txt"
+                },
+                "spanish_keywords": {
+                    "type":       "keyword_marker",
+                    "keywords":   ["ejemplo"] 
+                },
+                "spanish_stemmer": {
+                    "type":       "stemmer",
+                    "language":   "light_spanish"
+                }
+            },
+            "analyzer": {
+                "spanish": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "char_filter": [
+                        "html_strip"
+                    ],
+                    "filter": [
+                        "spanish_omitted", "lowercase", "spanish_stop", "spanish_keywords", "spanish_stemmer"
+                    ]
+                }
+            }
+        }
+    },
+    "mappings": {
+        "ofertas": {
+            "dynamic": "strict",
+            "properties": {
+                "titulo": {
+                    "type": "text",
+                    "term_vector": "yes",
+                    "store": true,
+                    "analyzer": "spanish",
+                    "search_analyzer": "spanish"
+                },
+                "descripcion": {
+                    "type": "text",
+                    "term_vector": "yes",
+                    "store": true,
+                    "analyzer": "spanish",
+                    "search_analyzer": "spanish"
+                },
+                "agencia": {
+                    "properties":{
+                        "nombre":{
+                            "type": "text"
+                        },
+                        "cif":{
+                            "type": "text"
+                        }
+                    }
+                },
+                "precio_base":{
+                    "type": "double"
+                },
+                "ubicacion":{
+                    "properties":{
+                        "direccion":{
+                            "type": "text"
+                        },
+                        "coord":{
+                            "type": "geo_point"
+                        }
+                    }
+                },
+                "requisitos":{
+                    "type": "text"
+                },
+                "cancelado":{
+                    "type": "boolean"
+                },
+                "categoria":{
+                    "type" : "text"
+                }
+            }
+        }
+    }
+}
