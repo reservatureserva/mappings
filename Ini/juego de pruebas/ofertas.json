@@ -1,25 +1,25 @@
-post http://localhost:9200/ofertas/ofertas
-{
-	"titulo": "Clases de aerobic",
-	"descripcion": "Quieres un cuerpo sano, quieres ponerte en forma de pelota jajaja, me aburro mucho y me estoy quedando muy solo, ayuda",
-	"agencia":{
-		"nombre": "Decathlon S.A",
-		"cif": "12345678A"
-	},
-	"precio_base": 20.50,
-	"ubicacion": {
-		"direccion": "Calle la calle",
-		"coord": "41.12,-71.34"
-	},
-	"requisitos": ["tener gato", "sin vicios", "que pueda pagarlo"],
-	"cancelado": false,
-	"categoria": "servicio"
-}
+post http: //localhost:9200/ofertas/ofertas
+	{
+		"titulo": "Clases de aerobic",
+		"descripcion": "Quieres un cuerpo sano, quieres ponerte en forma de pelota jajaja, me aburro mucho y me estoy quedando muy solo, ayuda",
+		"agencia": {
+			"nombre": "Decathlon S.A",
+			"cif": "12345678A"
+		},
+		"precio_base": 20.50,
+		"ubicacion": {
+			"direccion": "Calle la calle",
+			"coord": "41.12,-71.34"
+		},
+		"requisitos": ["tener gato", "sin vicios", "que pueda pagarlo"],
+		"cancelado": false,
+		"categoria": "servicio"
+	}
 
 {
 	"titulo": "Equipación para aerobic profesional",
 	"descripcion": "Alquila la equipación necesaria para practicar aerobic con todas las de la ley, incluye ropa y mierdas varias xD",
-	"agencia":{
+	"agencia": {
 		"nombre": "InterSport",
 		"cif": "54312334B"
 	},
@@ -36,7 +36,7 @@ post http://localhost:9200/ofertas/ofertas
 {
 	"titulo": "Mando Xbox One S",
 	"descripcion": "Mando para la consola Xbox One o para PC, necesario Bluetooth para pc",
-	"agencia":{
+	"agencia": {
 		"nombre": "The Coallition",
 		"cif": "54897864F"
 	},
@@ -53,7 +53,7 @@ post http://localhost:9200/ofertas/ofertas
 {
 	"titulo": "Pc Gaming Master Race",
 	"descripcion": "Ordenador Gaming para jugar a cualquier juego en ultra 4k FullHD, 2 graficas Nvidia 1080 Titan, 64GB de RAM DDR4, intel i9, SSD 1TB",
-	"agencia":{
+	"agencia": {
 		"nombre": "Life Informatica",
 		"cif": "453234234F"
 	},
@@ -70,7 +70,7 @@ post http://localhost:9200/ofertas/ofertas
 {
 	"titulo": "Pc Gaming Master Race 2",
 	"descripcion": "Ordenador 2 Gaming para jugar a cualquier juego en ultra 4k FullHD, 2 graficas Nvidia 1080 Titan, 64GB de RAM DDR4, intel i9, SSD 1TB",
-	"agencia":{
+	"agencia": {
 		"nombre": "Life Informatica 2",
 		"cif": "453234234F"
 	},
@@ -87,7 +87,7 @@ post http://localhost:9200/ofertas/ofertas
 {
 	"titulo": "Pc Gaming Master Race 3",
 	"descripcion": "Ordenador 3 Gaming para jugar a cualquier juego en ultra 4k FullHD, 2 graficas Nvidia 1080 Titan, 64GB de RAM DDR4, intel i9, SSD 1TB",
-	"agencia":{
+	"agencia": {
 		"nombre": "Life Informatica 3",
 		"cif": "453234234F"
 	},
@@ -103,124 +103,114 @@ post http://localhost:9200/ofertas/ofertas
 
 {
 
-    "titulo"    :       "Coche",
-    "descripcion" :     "coche deportivo",
-    "agencia":{
-        "nombre" : "Tesla",
-        "cif"    :  "123Z"
-    },
-    "cancelado" : false,
-    "requisitos": ["mayor de edad", "asdasd", "asd"],
-    "ubicacion" : {
-        "direccion" :   "Carrer X, 2, 2 patata",
-        "coord"     :   "4.212465857, 2.157234",
-    },
-    "categoria"     :   "DPT",
-    "precio_base"   :   7000.0
-
-    },
-
-
+	"titulo": "Coche",
+	"descripcion": "coche deportivo",
+	"agencia": {
+		"nombre": "Tesla",
+		"cif": "123Z"
+	},
+	"cancelado": false,
+	"requisitos": ["mayor de edad", "asdasd", "asd"],
+	"ubicacion": {
+		"direccion": "Carrer X, 2, 2 patata",
+		"coord": "4.212465857, 2.157234",
+	},
+	"categoria": "DPT",
+	"precio_base": 7000.0
 }
 
 {
 
-    "titulo"    :       "Alcachofa",
-    "descripcion" :     "comida",
-    "agencia":{
-        "nombre" : "Mercadona",
-        "cif"    :  "1234V"
-    },
-    "cancelado" : false,
-    "requisitos": "",
-    "ubicacion" : {
-        "direccion" :   "Carrer ZP, 3, 6",
-        "coord"     :   "4.212465858, 2.157234",
-    },
-    "categoria"     :   "DPT",
-    "precio_base"   :   7000.0
-
-    },
-
-
+	"titulo": "Alcachofa",
+	"descripcion": "comida",
+	"agencia": {
+		"nombre": "Mercadona",
+		"cif": "1234V"
+	},
+	"cancelado": false,
+	"requisitos": "",
+	"ubicacion": {
+		"direccion": "Carrer ZP, 3, 6",
+		"coord": "4.212465858, 2.157234",
+	},
+	"categoria": "DPT",
+	"precio_base": 7000.0
 }
 
 {
 
-    "titulo"    :       "Avion",
-    "descripcion" :     "Vuela a donde quieras",
-    "agencia":{
-        "nombre" : "ryanair",
-        "cif"    :  "123725P"
-    },
-    "cancelado" : true,
-    "requisitos": ["mayor de edad"],
-    "ubicacion" : {
-        "direccion" :   "Aeropuerto, Barcelona",
-        "coord"     :   "4.212465857, 2.157421",
-    },
-    "categoria"     :   "DPT",
-    "precio_base"   :   9000.0
-
-    },
-
-
+	"titulo": "Avion",
+	"descripcion": "Vuela a donde quieras",
+	"agencia": {
+		"nombre": "ryanair",
+		"cif": "123725P"
+	},
+	"cancelado": true,
+	"requisitos": ["mayor de edad"],
+	"ubicacion": {
+		"direccion": "Aeropuerto, Barcelona",
+		"coord": "4.212465857, 2.157421",
+	},
+	"categoria": "DPT",
+	"precio_base": 9000.0
 }
-
-
 
 
 
 //Querys
-post http://localhost:9200/ofertas/_search
-{
-	"from" : 0, "size" : 2,
-	"sort": [
-		{
-			"_geo_distance" : {
-				"ubicacion.coord" : [41, 2.19],
-				"order" : "asc",
-				"unit" : "km",
-				"mode" : "min",
-				"distance_type" : "arc"
-			}
+post http: //localhost:9200/ofertas/_search
+	{
+		"from": 0,
+		"size": 2,
+		"sort": [{
+				"_geo_distance": {
+					"ubicacion.coord": [41, 2.19],
+					"order": "asc",
+					"unit": "km",
+					"mode": "min",
+					"distance_type": "arc"
+				}
+			}, {
+				"precio_base": {
+					"order": "asc",
+					"mode": "avg"
+				}
+			} //si tiene diferentes precios, ordenará la media de estos
+		],
+		"_source": {
+			"includes": ["titulo", "descripcion"], //que campos ha de devolver
+			"excludes": ["cancelado"]
 		},
-		{"precio_base":{"order" : "asc", "mode" : "avg"}}//si tiene diferentes precios, ordenará la media de estos
-	],
-	"_source": {
-		"includes": ["titulo", "descripcion"],//que campos ha de devolver
-		"excludes": ["cancelado"]
-	},
-	"query": {
-		"filtered" : {
-			"multi_match" : {
-				"query" : "equipacion aerobic",
-				"fields": [ "titulo", "descripcion", "agencia.nombre" ]
-			}
-		},
-		"filter" : {
-			"geo_distance" : {
-				"distance" : "100km",
-				"ubicacion.coord" : "41.391097,2.154857"
+		"query": {
+			"filtered": {
+				"multi_match": {
+					"query": "equipacion aerobic",
+					"fields": ["titulo", "descripcion", "agencia.nombre"]
+				}
+			},
+			"filter": {
+				"geo_distance": {
+					"distance": "100km",
+					"ubicacion.coord": "41.391097,2.154857"
+				}
 			}
 		}
 	}
-}
 
 
 {
 	"query": {
-		"bool":{
-			"must":{
-			"multi_match" : {
-				"query" : "ordenador",
-				"fields": [ "titulo", "descripcion", "agencia.nombre" ]
-			}	
+		"bool": {
+			"must": {
+				"multi_match": {
+					"query": "ordenador",
+					"fields": ["titulo", "descripcion", "agencia.nombre"]
+				}
 			},
-			"filter" : {
-				"geo_distance" : {
-					"distance" : "95km",
-					"ubicacion.coord" : "41.391097,2.154857"
+			"filter": {
+				"geo_distance": {
+					"distance": "95km",
+					"ubicacion.coord": "41.391097,2.154857"
 				}
 			}
 		}
