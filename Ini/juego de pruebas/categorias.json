@@ -1,0 +1,63 @@
+{
+	"clave" 		:	"DPT",
+	"descripcion"	:	"Deportes"
+},
+{
+	"clave" 		:	"MOTOR",
+	"descripcion"	:	"Vehículos"
+}
+{
+	"clave" 		:	"INF",
+	"descripcion"	:	"Infantil"
+}
+
+{
+	"clave" 		:	"DPT",
+	"descripcion"	:	"Deportes"
+}
+
+{
+	"clave" 		:	"ELECTR",
+	"descripcion"	:	"Electrónica"
+}
+
+{
+	"clave" 		:	"SERV",
+	"descripcion"	:	"Servicios"
+}
+
+{
+	"clave" 		:	"DPT",
+	"descripcion"	:	"Deportes"
+}
+
+{
+	"clave" 		:	"HOSP",
+	"descripcion"	:	"Hospedaje"
+}
+
+{
+	"clave" 		:	"ACCS",
+	"descripcion"	:	"Accesorios"
+}
+
+{
+	"clave" 		:	"MUEBL",
+	"descripcion"	:	"Muebles"
+}
+
+{
+	"clave" 		:	"CULT",
+	"descripcion"	:	"Libros/Música/Cine"
+}
+
+{
+	"clave" 		:	"OTR",
+	"descripcion"	:	"Otros"
+}
+
+{
+	"clave" 		:	"VIDJ",
+	"descripcion"	:	"Consolas/Videojuegos"
+}
+

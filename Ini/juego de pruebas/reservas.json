@@ -7,3 +7,14 @@
 	"cliente"					:		"12345678X",
 	"costo"						:		"30"
 }
+
+
+{
+	"fecha_inicio"				:		"1524836231",
+	"fecha_fin"					:		"1524869763",
+	"fecha_cancelacion"			:		"",
+	"oferta"					:		"idasdlvnlslmcl20vs1wqe",
+	"empresa"					:		"22345122X",
+	"cliente"					:		"12345624X",
+	"costo"						:		"27"
+}

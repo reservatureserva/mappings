@@ -100,6 +100,77 @@ post http://localhost:9200/ofertas/ofertas
 	"cancelado": false,
 	"categoria": "videojuegos"
 }
+
+{
+
+    "titulo"    :       "Coche",
+    "descripcion" :     "coche deportivo",
+    "agencia":{
+        "nombre" : "Tesla",
+        "cif"    :  "123Z"
+    },
+    "cancelado" : false,
+    "requisitos": ["mayor de edad", "asdasd", "asd"],
+    "ubicacion" : {
+        "direccion" :   "Carrer X, 2, 2 patata",
+        "coord"     :   "4.212465857, 2.157234",
+    },
+    "categoria"     :   "DPT",
+    "precio_base"   :   7000.0
+
+    },
+
+
+}
+
+{
+
+    "titulo"    :       "Alcachofa",
+    "descripcion" :     "comida",
+    "agencia":{
+        "nombre" : "Mercadona",
+        "cif"    :  "1234V"
+    },
+    "cancelado" : false,
+    "requisitos": "",
+    "ubicacion" : {
+        "direccion" :   "Carrer ZP, 3, 6",
+        "coord"     :   "4.212465858, 2.157234",
+    },
+    "categoria"     :   "DPT",
+    "precio_base"   :   7000.0
+
+    },
+
+
+}
+
+{
+
+    "titulo"    :       "Avion",
+    "descripcion" :     "Vuela a donde quieras",
+    "agencia":{
+        "nombre" : "ryanair",
+        "cif"    :  "123725P"
+    },
+    "cancelado" : true,
+    "requisitos": ["mayor de edad"],
+    "ubicacion" : {
+        "direccion" :   "Aeropuerto, Barcelona",
+        "coord"     :   "4.212465857, 2.157421",
+    },
+    "categoria"     :   "DPT",
+    "precio_base"   :   9000.0
+
+    },
+
+
+}
+
+
+
+
+
 //Querys
 post http://localhost:9200/ofertas/_search
 {

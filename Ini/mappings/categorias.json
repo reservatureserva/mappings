@@ -4,7 +4,10 @@ put http://localhost:9200/categorias
 		"categorias":{
 			"dynamic": "strict",
 			"properties":{
-				"categoria":{
+				"clave":{
+					"type" : "text"
+				},
+				"descripcion":{
 					"type" : "text"
 				}
 			}
