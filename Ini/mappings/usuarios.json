@@ -7,13 +7,13 @@ put http://localhost:9200/ofertas
                 "dni": {
                     "type": "keyword"
                 },
-                "nombreCompleto": {
+                "nombre": {
                     "type": "keyword"
                 },
                 "email": {
                     "type": "keyword"
                 },
-                "telefono":{
+                "tlf":{
                     "type": "keyword"
                 },
                 "fecha_nacimiento":{
@@ -23,6 +23,9 @@ put http://localhost:9200/ofertas
                 "fecha_registro":{
                     "type": "date",
                     "format": "epoch_second"
+                },
+                "foto_perfil":{
+                    "type": "binary"
                 }
             }
         }

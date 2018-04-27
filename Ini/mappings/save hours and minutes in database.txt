@@ -1,0 +1,7 @@
+You could store it as an integer of the number of minutes past midnight:
+
+eg.
+
+0 = 00:00 
+60 = 01:00
+252 = 04:12

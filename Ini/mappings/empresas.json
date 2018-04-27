@@ -13,6 +13,9 @@ put http://localhost:9200/empresas
 				"email": {
 					"type": "keyword"
 				},
+                "tlf":{
+                    "type": "keyword"
+                },
 				"logo":{
 					"type": "binary"
 				},
