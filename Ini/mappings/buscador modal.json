@@ -1,0 +1,7 @@
+{
+	"busqueda" : "coche", /*$("input[name='busqueda']")*/
+	"categoria" : "DP", /*$("input[name='categoria']")*/
+	"precio" : "20, 50", /*$("input[name='precio'][type='hidden']") */
+	"distancia": "15", /*$("input[name='distancia'][type='hidden']") */
+	"ordenar" : "DISTANCIA" /*$("input[name='ordenar']")*/
+}
