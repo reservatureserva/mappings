@@ -82,6 +82,9 @@
                 },
                 "categoria":{
                     "type" : "text"
+                },
+                "imagenes":{
+                    "type" : "binary"
                 }
             }
         }

@@ -1,5 +1,5 @@
 post http: //localhost:9200/ofertas/ofertas
-	{
+	[{
 		"titulo": "Clases de aerobic",
 		"descripcion": "Quieres un cuerpo sano, quieres ponerte en forma de pelota jajaja, me aburro mucho y me estoy quedando muy solo, ayuda",
 		"agencia": {
@@ -14,7 +14,7 @@ post http: //localhost:9200/ofertas/ofertas
 		"requisitos": ["tener gato", "sin vicios", "que pueda pagarlo"],
 		"cancelado": false,
 		"categoria": "servicio"
-	}
+	},
 
 {
 	"titulo": "Equipación para aerobic profesional",
@@ -31,7 +31,7 @@ post http: //localhost:9200/ofertas/ofertas
 	"requisitos": ["ser mayor de edad", "que tenga perro", "que pueda pagarlo"],
 	"cancelado": false,
 	"categoria": "deporte"
-}
+},
 
 {
 	"titulo": "Mando Xbox One S",
@@ -48,7 +48,7 @@ post http: //localhost:9200/ofertas/ofertas
 	"requisitos": ["ser mayor de edad", "xbox one", "pc gamer master race"],
 	"cancelado": false,
 	"categoria": "videojuegos"
-}
+}]
 /********+++++++++++++++++++++++++++++*/
 {
 	"titulo": "Pc Gaming Master Race",

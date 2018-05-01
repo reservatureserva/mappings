@@ -1,20 +1,42 @@
-{
+[{
+	"titulo"					:		"Masaje",
+	"descripcion"				:		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia",
 	"fecha_inicio"				:		"1524836928",
 	"fecha_fin"					:		"1524862128",
 	"fecha_cancelacion"			:		"",
 	"oferta"					:		"idasdlvnlslmcl201wqe",
-	"empresa"					:		"22345678X",
+	"agencia"					:		{
+		"cif":"22345678X",
+		"nombre":"Tu madre :v xd"
+	},
 	"cliente"					:		"12345678X",
 	"costo"						:		"30"
-}
-
-
+},
 {
+	"titulo"					:		"Sustos",
+	"descripcion"				:		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia",
 	"fecha_inicio"				:		"1524836231",
 	"fecha_fin"					:		"1524869763",
 	"fecha_cancelacion"			:		"",
 	"oferta"					:		"idasdlvnlslmcl20vs1wqe",
-	"empresa"					:		"22345122X",
+	"agencia"					:		{
+		"cif":"22345678X",
+		"nombre":"Monster SA"
+	},
 	"cliente"					:		"12345624X",
 	"costo"						:		"27"
-}
+},
+{
+	"titulo"					:		"Sustos",
+	"descripcion"				:		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia",
+	"fecha_inicio"				:		"1524836231",
+	"fecha_fin"					:		"1524869763",
+	"fecha_cancelacion"			:		"",
+	"oferta"					:		"idasdlvnlslmcl20vs1wqe",
+	"agencia"					:		{
+		"cif":"22345678X",
+		"nombre":"Patata SA"
+	},
+	"cliente"					:		"12345624X",
+	"costo"						:		"27"
+}]
