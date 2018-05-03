@@ -1,4 +1,6 @@
 {
+    "oferta" : "asdasdasdX",
+    "total_dìsponible": "20",
     "lunes":{
         "hora_inicio":"08:00",
         "hora_fin":"14:00",
@@ -81,8 +83,8 @@
         "hora_fin2":""
     },
     "domingo":{
-        "hora_inicio":"08:00",
-        "hora_fin":"14:00",
+        "hora_inicio":"",
+        "hora_fin":"",
         "hora_inicio2":"",
         "hora_fin2":""
     }

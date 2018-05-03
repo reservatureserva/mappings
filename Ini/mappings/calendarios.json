@@ -15,7 +15,7 @@ put http://localhost:9200/calendarios
                         "hora_fin":{
                             "type": "text"
                         },
-                        "hora_inicio1":{
+                        "hora_inicio2":{
                             "type": "text"
                         },
                         "hora_fin2":{
@@ -31,7 +31,7 @@ put http://localhost:9200/calendarios
                         "hora_fin":{
                             "type": "text"
                         },
-                        "hora_inicio1":{
+                        "hora_inicio2":{
                             "type": "text"
                         },
                         "hora_fin2":{
@@ -47,7 +47,7 @@ put http://localhost:9200/calendarios
                         "hora_fin":{
                             "type": "text"
                         },
-                        "hora_inicio1":{
+                        "hora_inicio2":{
                             "type": "text"
                         },
                         "hora_fin2":{
@@ -63,7 +63,7 @@ put http://localhost:9200/calendarios
                         "hora_fin":{
                             "type": "text"
                         },
-                        "hora_inicio1":{
+                        "hora_inicio2":{
                             "type": "text"
                         },
                         "hora_fin2":{
@@ -79,7 +79,7 @@ put http://localhost:9200/calendarios
                         "hora_fin":{
                             "type": "text"
                         },
-                        "hora_inicio1":{
+                        "hora_inicio2":{
                             "type": "text"
                         },
                         "hora_fin2":{
@@ -95,7 +95,7 @@ put http://localhost:9200/calendarios
                         "hora_fin":{
                             "type": "text"
                         },
-                        "hora_inicio1":{
+                        "hora_inicio2":{
                             "type": "text"
                         },
                         "hora_fin2":{
@@ -111,7 +111,7 @@ put http://localhost:9200/calendarios
                         "hora_fin":{
                             "type": "text"
                         },
-                        "hora_inicio1":{
+                        "hora_inicio2":{
                             "type": "text"
                         },
                         "hora_fin2":{
