@@ -1,0 +1,14 @@
+{
+"lunes":{
+	"08:00":10,
+	"09:00":10
+}
+}
+
+Reservas->
+
+- Select *
+	from reservas
+	where producto = XXX and fIni >= hoy y fFin <= (final de semana);
+
+
