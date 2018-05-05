@@ -18,14 +18,14 @@ put http://localhost:9200/ofertas
                 },
                 "fecha_nacimiento":{
                     "type": "date",
-                    "format": "epoch_second"
+                    "format": "epoch"
                 },
                 "fecha_registro":{
                     "type": "date",
-                    "format": "epoch_second"
+                    "format": "epoch"
                 },
                 "foto_perfil":{
-                    "type": "binary"
+                    "type": "keyword"
                 }
             }
         }
