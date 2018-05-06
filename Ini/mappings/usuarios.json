@@ -1,4 +1,4 @@
-put http://localhost:9200/ofertas
+put http://localhost:9200/usuarios
 {
     "mappings": {
        "usuarios": {
@@ -17,12 +17,10 @@ put http://localhost:9200/ofertas
                     "type": "keyword"
                 },
                 "fecha_nacimiento":{
-                    "type": "date",
-                    "format": "epoch"
+                    "type": "date"
                 },
                 "fecha_registro":{
-                    "type": "date",
-                    "format": "epoch"
+                    "type": "date"
                 },
                 "foto_perfil":{
                     "type": "keyword"

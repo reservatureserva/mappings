@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "d5719431-3042-476c-8857-6e4b284d190d",
+		"name": "mappings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario mapping",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mappings\": {\n       \"usuarios\": {\n            \"dynamic\": \"strict\",\n            \"properties\": {\n                \"dni\": {\n                    \"type\": \"keyword\"\n                },\n                \"nombre\": {\n                    \"type\": \"keyword\"\n                },\n                \"email\": {\n                    \"type\": \"keyword\"\n                },\n                \"tlf\":{\n                    \"type\": \"keyword\"\n                },\n                \"fecha_nacimiento\":{\n                    \"type\": \"date\"\n                },\n                \"fecha_registro\":{\n                    \"type\": \"date\"\n                },\n                \"foto_perfil\":{\n                    \"type\": \"keyword\"\n                }\n            }\n        }\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9200/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

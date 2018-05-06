@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "52a6eb72-12db-4f3c-aa98-d2b7abfe826e",
+		"name": "CRUD NODE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get PRofile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"email\" : \"alx@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get IMG node",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8000/img/users/NjY2NjY2NjZS.jpg",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"img",
+						"users",
+						"NjY2NjY2NjZS.jpg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
