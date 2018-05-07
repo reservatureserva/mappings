@@ -84,7 +84,7 @@
                     "type" : "text"
                 },
                 "imagenes":{
-                    "type" : "binary"
+                    "type" : "text"
                 }
             }
         }
