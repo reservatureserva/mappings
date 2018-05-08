@@ -4,23 +4,33 @@ put http://localhost:9200/reservas
      "reservas":{
         "dynamic": "strict",
         "properties":{
+            "titulo": {
+                "type": "text"
+            },
+            "descripcion": {
+                "type": "text"
+            },
             "fecha_inicio":{
-                "type": "date",
-                "format": "epoch_second"
+                "type": "date"
             },
             "fecha_fin":{
-                "type": "date",
-                "format": "epoch_second"
+                "type": "date"
             },
             "fecha_cancelacion":{
-                "type": "date",
-                "format": "epoch_second"
+                "type": "date"
             },
             "oferta":{
                 "type": "text"
             },
-            "empresa":{
-                "type": "text"
+            "agencia": {
+                "properties":{
+                    "nombre":{
+                        "type": "text"
+                    },
+                    "cif":{
+                        "type": "text"
+                    }
+                }
             },
             "cliente":{
                 "type": "text"

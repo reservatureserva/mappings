@@ -13,7 +13,7 @@ post http: //localhost:9200/ofertas/ofertas
 		},
 		"requisitos": ["tener gato", "sin vicios", "que pueda pagarlo"],
 		"cancelado": false,
-		"categoria": "servicio"
+		"categoria": "Xc1TQGMBUcTS73KHnKk7"
 	},
 
 {
@@ -163,35 +163,37 @@ post http: //localhost:9200/ofertas/_search
 		"from": 0,
 		"size": 2,
 		"sort": [{
+			//si en el modal dejan "ordenar por distancia"
 				"_geo_distance": {
-					"ubicacion.coord": [41, 2.19],
+					"ubicacion.coord": [41, 2.19],//modal
 					"order": "asc",
 					"unit": "km",
 					"mode": "min",
 					"distance_type": "arc"
 				}
 			}, {
+				//por si piden orden del mas pequeño al más caro
 				"precio_base": {
-					"order": "asc",
-					"mode": "avg"
+					"order": "asc"
 				}
 			} //si tiene diferentes precios, ordenará la media de estos
 		],
-		"_source": {
+		/*"_source": {
 			"includes": ["titulo", "descripcion"], //que campos ha de devolver
 			"excludes": ["cancelado"]
-		},
+		},*/
 		"query": {
 			"filtered": {
 				"multi_match": {
-					"query": "equipacion aerobic",
+					"query": "equipacion aerobic", //modal
 					"fields": ["titulo", "descripcion", "agencia.nombre"]
 				}
 			},
 			"filter": {
+				//solo si incluyen distancia sliders
 				"geo_distance": {
-					"distance": "100km",
-					"ubicacion.coord": "41.391097,2.154857"
+					"distance": "10km",//modal
+					"ubicacion.coord": "41.391097,2.154857" //modal
 				}
 			}
 		}

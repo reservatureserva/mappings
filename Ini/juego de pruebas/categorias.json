@@ -1,8 +1,4 @@
 {
-	"clave" 		:	"DPT",
-	"descripcion"	:	"Deportes"
-},
-{
 	"clave" 		:	"MOTOR",
 	"descripcion"	:	"Vehículos"
 }
@@ -24,11 +20,6 @@
 {
 	"clave" 		:	"SERV",
 	"descripcion"	:	"Servicios"
-}
-
-{
-	"clave" 		:	"DPT",
-	"descripcion"	:	"Deportes"
 }
 
 {
