@@ -163,7 +163,6 @@ post http: //localhost:9200/ofertas/_search
 		"from": 0,
 		"size": 2,
 		"sort": [{
-			//si en el modal dejan "ordenar por distancia"
 				"_geo_distance": {
 					"ubicacion.coord": [41, 2.19],//modal
 					"order": "asc",
@@ -217,4 +216,44 @@ post http: //localhost:9200/ofertas/_search
 			}
 		}
 	}
+}
+
+/****************** OK to live :v */
+{
+  "from" : 0,
+  "size" : 10,
+  "sort" :[
+  	{
+  		"precio_base": {
+					"order": "desc"
+				}
+  	},
+  	{
+            "_geo_distance" : {
+            	 "order" : "asc",
+                "unit" : "km",
+                "mode" : "min",
+                "ubicacion.coord" : {
+                	"lat":  41.391096999999995,
+        			"lon": 2.154856900000027
+        		}
+            }
+        }
+  	],
+  "query": {
+    "bool": {  
+      "must" : {
+        "multi_match": {
+					"query": "clases",
+					"fields": ["titulo", "descripcion", "agencia.nombre"]
+				}
+      },
+      "filter": {
+        "geo_distance": {
+					"distance": "50km",
+					"ubicacion.coord": "41.3899238, 2.1511634999999387" 
+				}
+      }
+    }
+  }
 }
